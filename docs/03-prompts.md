@@ -1,5 +1,14 @@
 # Prompts do Agente
 
+> [!TIP]
+> "Prompt Sugerido para esta etapa:
+>````
+>crie um system prompt para um agente chamado[nome_do_seu_agente],  [conxtesto_seu_agente], regras:
+>[Listar as regras]
+>incluir 3 exemplos de inreações e 3 3 edges cases
+>cole o template 03 prompt.md
+>
+
 ## System Prompt
 
 ```
@@ -463,6 +472,9 @@ Você topa me contar rapidamente sua renda aproximada e qual é a meta que mais 
 ## Observações e Aprendizados
 
 > Registre aqui ajustes que deverá fazer nos prompts e por quê.
+>
+> Registramos que existem diferença significativas no uso de direrentes LLMs. Por exemplo, ao usasr o  Chat GPT, Copilot e Cloude tivemos comportamentos similares com o mesmo System Prompt, mas cada um deles deu uma resposta em padrôes distintos.  Na prática, todos se eaíram bem, mas o ChatGPT se perdeu Edge Casede Perguntas fora do escopo = "Qual a previsão do tempo amanhã?"
+> 
 
 1. Reforçar a Proatividade com Limites Claros:
    - Observação: O agente é proativo, mas precisa de limites para não ser intrusivo ou gerar expectativas irreais.
