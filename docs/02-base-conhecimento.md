@@ -37,18 +37,13 @@ Pode ser via injeção de dados diretamente no prompt (contrl + c, control + v) 
 import pandas as pd
 import json
 
-# CVS
-
-historico = pd.read_cvs('data/historico_atendimento.cvs')
+#csv
+historico = pd.read_csv('data/historico_atendimento.cvs')
 transacoes = pd.read_csv('data/trasacoes.csv')
 
-# JSON
-
-whith open('data/perfil_investido.json', 'r', encoding='utf-8') as f:
-      perfil = json.load(f)
-
-whith open('data/produto_financeiro.json', 'r', encoding='utf-8') as f:
-      produtos = json.load(f)
+#JSON
+perfil = json.load(open('data/perfil_investido.json'))
+produtos = json.load( open('data/produto_financeiro.json'))
 
 ````
 
