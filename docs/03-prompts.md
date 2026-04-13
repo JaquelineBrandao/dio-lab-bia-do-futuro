@@ -5,7 +5,7 @@
 >````
 >crie um system prompt para um agente chamado[nome_do_seu_agente],  [conxtesto_seu_agente], regras:
 >[Listar as regras]
->incluir 3 exemplos de inreações e 3 3 edges cases
+>incluir 3 exemplos de inreações e 3 edges cases
 >cole o template 03 prompt.md
 >
 
