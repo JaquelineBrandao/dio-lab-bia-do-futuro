@@ -3,6 +3,16 @@ import pandas as pd
 import json
 import streamlit as st
 import requests
+# import os
+#from ollama import Client
+
+# ======================================= CONFIGURAÇAO ==========================================
+# Ollama Localhost (base loval)
+OLLAMA_URL = "https://localhost:1434/api/generate"
+
+# Ollama Cloud
+# OLLAMA_URL = "https://localhost:1434/api/generate"
+MODELO = "gpt-oss"
 
 # ====================================== CARREGAR DADOS =========================================
 
@@ -94,7 +104,13 @@ def perguntar(msg):
 
     pergunta: {msg}"""
 
-    r = resquest.post(OLLAMA_URL), json=({"model": MODELO, "prompt": prompt, "stream": False})
+    r = resquest.post(OLLAMA_URL), 
+    json=(
+        {"model": MODELO, 
+         "prompt": prompt, 
+         "stream": False
+         }
+         )
     return r.json()['response']
 
 
